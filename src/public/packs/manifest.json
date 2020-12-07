@@ -1,0 +1,19 @@
+{
+  "application.js": "/packs/js/application-2a039589ea42e9b7f20d.js",
+  "application.js.map": "/packs/js/application-2a039589ea42e9b7f20d.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-2a039589ea42e9b7f20d.js"
+      ],
+      "js.map": [
+        "/packs/js/application-2a039589ea42e9b7f20d.js.map"
+      ]
+    }
+  },
+  "media/fonts/glyphicons-halflings-regular.eot": "/packs/media/fonts/glyphicons-halflings-regular-f4769f9b.eot",
+  "media/fonts/glyphicons-halflings-regular.svg": "/packs/media/fonts/glyphicons-halflings-regular-89889688.svg",
+  "media/fonts/glyphicons-halflings-regular.ttf": "/packs/media/fonts/glyphicons-halflings-regular-e18bbf61.ttf",
+  "media/fonts/glyphicons-halflings-regular.woff": "/packs/media/fonts/glyphicons-halflings-regular-fa277232.woff",
+  "media/fonts/glyphicons-halflings-regular.woff2": "/packs/media/fonts/glyphicons-halflings-regular-448c34a5.woff2"
+}

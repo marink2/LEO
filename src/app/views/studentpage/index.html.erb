@@ -1,0 +1,37 @@
+<!-- format for student page-->
+
+<div class="container">
+    <!-- student logo icon-->
+    <div class="row">
+        <div class = "col-md-2 col-md-offset-1 text-center">
+            <div class = "wrap-sp-user">
+                <span class="glyphicon-big glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                <p>
+                    </br>
+                    <!-- displays students email-->
+                    <%= current_user.email %>
+                </p>
+                <!-- logout button -->
+                <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+            </div>
+        </div>
+
+        <!-- format for previewing questions made by student user -->
+        <div class = "wrap-sp-nav col-md-6">
+            <%= render "navbar" %>
+            <div class = "wrap-sp-questions">
+                <!-- (add a preview to list of posts) -->
+            </div>    
+        </div>
+    </div>
+
+    <!-- back to home button format -->
+    <div class="row">
+        <div class="wrap-bottom col-md-2 col-md-offset-5 text-center">
+            <p>Go To <%= link_to 'Home', homepage_path %></p>
+        </div>
+    </div> 
+
+</div>
+
+<%= render "devise/shared/style" %>

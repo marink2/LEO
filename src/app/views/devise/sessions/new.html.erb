@@ -1,0 +1,54 @@
+<!-- Prints logo and formats it -->
+<div class="container">
+  <div class="wrap-logo row center-block">
+    <img class="img-responsive" src="https://user-images.githubusercontent.com/45517485/99413674-09ea8e80-28c4-11eb-8a1d-26e8e091ee24.png">
+  </div>
+  
+  <!-- sign in text -->
+  <div>
+    <h1 class="text-center">Sign in</h1>
+  </div>
+
+  <!-- formats the log in form -->
+  <div class="row">
+    <div class="wrap-card col-md-4 col-md-offset-4">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="form-group">
+        <%= f.label :email %>
+        <%= f.email_field :email, autofocus: true, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <div class="align-left">
+          <%= f.label :password %>
+        </div>
+        <div class="align-right">
+          <%= link_to "Forgot your password?", new_password_path(resource_name) %>
+        </div> 
+        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+        <div class="checkbox">
+        <label>
+          <%= f.check_box :remember_me %> Remember Me
+        </label>
+      </div>
+
+      <% end -%>
+        <%= f.submit "Log in", class: "btn btn-success btn-md btn-block" %>
+      <% end %>
+      
+    </div>
+  </div>
+
+  <!-- formats the sign up text in its own block-->
+  <div class="row">
+    <div class="wrap-bottom col-md-4 col-md-offset-4 text-center">
+      <p>New to LEO? <%= link_to "Create an account", new_registration_path(resource_name) %>.<p/>
+    </div>
+  </div>
+
+</div>
+
+<%= render "devise/shared/style" %>

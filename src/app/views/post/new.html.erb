@@ -1,0 +1,20 @@
+<!-- post format, in new page form for use in new page-->
+
+<h1>Post Question</h1>
+
+<%= form_tag :action => 'create' do %>
+
+    <p><label for = "post_title">Title</label>:
+    <%= text_field 'posts', 'title' %></p>
+
+    <p><label for = "post_entry">Question</label><br/>
+    <%= text_area 'posts', 'entry' %></p>
+
+    <p><label for = "post_subject">Subject</label>:
+    <%= collection_select(:posts, :subject, @subjects, :id, :name, prompt: true) %></p>
+
+    <%= submit_tag "Post" %>
+
+<% end -%>
+
+<p><%= link_to "Go To My Page", studentpage_path %></p>

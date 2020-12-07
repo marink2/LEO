@@ -1,0 +1,14 @@
+<!-- format for listing all posts (for future use in subjects page)-->
+<% if @posts.blank? %>
+    <p>my questions...</p>
+<% else %>
+    <ul id = "posts">
+    <% @posts.each do |c| %>
+    <li><%= link_to c.title, {:action => 'show', :id => c.id} -%></li>
+    <li><%= link_to c.entry, {:action => 'show', :id => c.id} -%></li>
+    <% end %>
+    </ul>
+
+<% end %>
+
+<p><%= link_to "Go To My Page", studentpage_path %></p>

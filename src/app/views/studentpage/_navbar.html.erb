@@ -1,0 +1,29 @@
+<!-- nav bar for student page -->
+
+<nav class="navbar align-right">
+    <!-- botton for notifications -->
+    <button type="button" class="btn btn-default navbar-btn btn-lg">Notifications</button>
+    <div class="divider"></div>
+    
+    <!-- botton for groups -->
+    <button type="button" class="btn btn-default navbar-btn btn-lg">Groups</button>
+    <div class="divider"></div>
+
+    <!-- botton dropdown to select subjects (for future use with subjects page) -->
+    <div class="btn-group">
+        <button class="btn dropdown-toggle btn-default btn-lg" type="button" id="menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Subject <span class="caret"></span></button>
+        <ul class="dropdown-menu" aria-labelledby="menu1">
+            <li><%= link_to 'Chemistry', list_path %></li>
+            <li class="disabled"><%= link_to 'Math', homepage_path %></li>
+            <li class="disabled"><%= link_to 'Computer Science', homepage_path %></li>          
+        </ul>
+    </div>
+    <div class="divider"></div>
+    
+    <!-- button to make a post (redirects to new page to make post) -->
+    <%= link_to 'Post Question', new_path,  :class => "btn btn-primary btn-lg" %>
+</nav>
+
+<! -- use bootstrap modal to ask questions-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
