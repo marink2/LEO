@@ -6,4 +6,4 @@ to conbat the ever increasing racial educational gap in New Jersey.
 
 [Proposal](https://github.com/marink2/LEO/blob/master/docs/Proposal.pdf)
 
-
+[Wiki](https://github.com/marink2/LEO/wiki)
